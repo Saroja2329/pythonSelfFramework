@@ -18,7 +18,7 @@ from selenium.webdriver.support import expected_conditions
 @pytest.fixture(scope='class')
 def setup(request):
     global driver
-    selenium_grid_url = "http://192.168.1.100:4444/wd/hub"
+    selenium_grid_url = "http://localhost:4444/wd/hub"
     # Create a desired capabilities object as a starting point.
     chromeOptions = webdriver.ChromeOptions()
 
