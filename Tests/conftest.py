@@ -42,3 +42,5 @@ def setup(request):
     driver.get("https://rahulshettyacademy.com/angularpractice/")
     driver.implicitly_wait(10)
     request.cls.driver=driver
+    yield
+    driver.close
